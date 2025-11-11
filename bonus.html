@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonuses | Sailing & Scaling as Co-Founders</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav class="nav-shell fixed inset-x-0 top-0 z-50 border-b border-[rgba(16,42,67,0.08)] bg-[rgba(244,237,228,0.9)]">
+        <div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="text-lg md:text-xl font-semibold tracking-wide text-[var(--navy)]">Ravi Warrier Publishing</a>
+                <div class="hidden md:flex items-center space-x-9 text-sm font-medium text-[var(--stone)]">
+                    <a href="index.html" class="hover:text-[var(--navy)] transition">Overview</a>
+                    <a href="book.html" class="hover:text-[var(--navy)] transition">Inside the Book</a>
+                    <a href="bonus.html" class="hover:text-[var(--navy)] transition">Bonuses</a>
+                    <a href="author.html" class="hover:text-[var(--navy)] transition">Author</a>
+                    <a href="faq.html" class="hover:text-[var(--navy)] transition">FAQ</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-3">
+                    <a href="bonus.html" class="text-sm font-semibold text-[var(--sea)] hover:text-[var(--navy)] transition">Read a free chapter</a>
+                    <a href="#checkout" class="inline-flex items-center gap-2 rounded-full bg-[var(--navy)] px-5 py-2 text-sm font-semibold text-white transition hover:translate-y-[-2px] hover:bg-[var(--deep-navy)]">
+                        Pre-order Your Copy
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6 6 6-6-6-6" />
+                        </svg>
+                    </a>
+                </div>
+                <button id="menu-btn" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-[rgba(16,42,67,0.15)] text-[var(--navy)]">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden border-t border-[rgba(16,42,67,0.08)] bg-[var(--cloud)]">
+            <div class="px-6 py-4 space-y-4 text-sm text-[var(--stone)]">
+                <a href="index.html" class="block">Overview</a>
+                <a href="book.html" class="block">Inside the Book</a>
+                <a href="bonus.html" class="block">Bonuses</a>
+                <a href="author.html" class="block">About the Author</a>
+                <a href="faq.html" class="block">FAQ</a>
+                <a href="#checkout" class="inline-flex items-center gap-2 rounded-full bg-[var(--navy)] px-5 py-2 font-semibold text-white">Pre-order Your Copy</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-24">
+        <!-- Sample Chapter Lead Magnet -->
+        <section id="sample" class="py-24 bg-white">
+            <div class="max-w-5xl mx-auto px-6 sm:px-8 lg:px-10">
+                <div class="rounded-[32px] border border-[rgba(16,42,67,0.08)] bg-[var(--cloud)] p-10 md:p-14 shadow-xl" data-animate="fade-up">
+                    <div class="grid md:grid-cols-2 gap-12 items-center">
+                        <div class="space-y-4" data-animate="fade-up">
+                            <p class="section-label text-[var(--sea)]">Get a Free Chapter</p>
+                            <h2 class="font-display text-3xl text-[var(--navy)]">Preview Chapter 2: The Trust Ledger</h2>
+                            <p class="text-sm text-[var(--stone)]">Download the trust pulse diagnostic, conversation starters, and a seven-day reflection sprint to restore alignment in your founding team.</p>
+                        </div>
+                        <div class="bg-white rounded-3xl border border-[rgba(16,42,67,0.08)] p-6" data-animate="slide-up" data-animate-delay="140">
+                            <form id="sample-form" class="space-y-4">
+                                <div class="space-y-2">
+                                    <label for="sample-name" class="text-xs font-semibold text-[var(--sea)] uppercase tracking-[0.18em]">Name</label>
+                                    <input id="sample-name" type="text" required class="w-full rounded-xl border border-[rgba(16,42,67,0.15)] px-4 py-3 text-sm focus:border-[var(--navy)] focus:outline-none">
+                                </div>
+                                <div class="space-y-2">
+                                    <label for="sample-email" class="text-xs font-semibold text-[var(--sea)] uppercase tracking-[0.18em]">Email</label>
+                                    <input id="sample-email" type="email" required class="w-full rounded-xl border border-[rgba(16,42,67,0.15)] px-4 py-3 text-sm focus:border-[var(--navy)] focus:outline-none">
+                                </div>
+                                <button type="submit" class="w-full rounded-full bg-[var(--navy)] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[var(--deep-navy)]">Send My Free Chapter</button>
+                            </form>
+                            <p class="text-[10px] text-[rgba(31,41,51,0.6)] mt-3">No spam. You'll receive the PDF and a short, valuable implementation email series.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Marquee for Coursework Disclaimer -->
+    <div class="fixed bottom-0 inset-x-0 bg-yellow-100 text-yellow-800 text-sm text-center py-2 z-50">
+        <marquee class="w-full">
+            <span class="font-semibold">Disclaimer:</span> This website is a project for a "Product Marketing" course and is intended for coursework purposes only. It is not an official representation of the author or book.
+        </marquee>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-[var(--deep-navy)] text-white/70">
+        <div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+            <p class="text-sm">© 2025 Ravi Warrier Publishing. All rights reserved.</p>
+            <div class="flex items-center gap-6 text-sm">
+                <a href="https://www.linkedin.com/in/raviwarrier/" class="hover:text-white transition">LinkedIn</a>
+                <a href="bonus.html" class="hover:text-white transition">Sample Chapter</a>
+                <a href="author.html" class="hover:text-white transition">Author</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="alert-modal" data-modal class="hidden fixed inset-0 z-[60] bg-black/40 flex items-center justify-center px-6">
+        <div class="bg-white rounded-3xl p-8 max-w-sm w-full shadow-2xl">
+            <div class="w-12 h-12 rounded-full bg-[var(--teal)] flex items-center justify-center text-white mx-auto">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+            </div>
+            <h3 class="text-center font-semibold text-lg text-[var(--navy)] mt-4" id="alert-title">Success!</h3>
+            <p class="text-center text-sm text-[var(--stone)] mt-2" id="alert-message">Your chapter preview is on its way.</p>
+            <button id="alert-close" class="mt-6 w-full rounded-full bg-[var(--navy)] py-3 text-sm font-semibold text-white">Back to the site</button>
+        </div>
+    </div>
+
+</body>
+</html>
