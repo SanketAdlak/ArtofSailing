@@ -183,63 +183,94 @@
 
     <!-- Inside the Book -->
     <section id="inside" class="py-24 bg-[var(--sand)]">
-        <div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10 grid lg:grid-cols-2 gap-16 items-start">
-            <div class="space-y-6" data-animate="fade-up">
+        <div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10">
+            <div class="text-center" data-animate="fade-up">
                 <p class="section-label text-[var(--sea)]">Your Strategic Playbook</p>
-                <h2 class="font-display text-3xl md:text-[2.75rem] text-[var(--navy)] leading-tight">Six Chapters to Move Your Co-Founding Team from Tension to Traction.</h2>
-                <p class="text-[var(--stone)] text-base leading-relaxed">Each chapter provides battle-tested conversation prompts, decision-making frameworks, and worksheets designed for the realities of Indian and global startups.</p>
-                <div class="space-y-5 chapter-timeline">
-                    <div class="chapter-node" data-animate="slide-right">
-                        <span class="chapter-node__label">Chapter 1</span>
-                        <div>
-                            <h3 class="font-semibold text-[var(--navy)]">The Partnership Charter</h3>
-                            <p class="text-sm text-[var(--stone)]">Forge a rock-solid foundation by articulating your shared ambition, ethics, and decision-making cadence.</p>
-                        </div>
-                    </div>
-                    <div class="chapter-node" data-animate="slide-right" data-animate-delay="120">
-                        <span class="chapter-node__label">Chapter 3</span>
-                        <div>
-                            <h3 class="font-semibold text-[var(--navy)]">Money, Equity & Momentum</h3>
-                            <p class="text-sm text-[var(--stone)]">Navigate compensation, ESOPs, and governance with fairness and long-term stewardship at the forefront.</p>
-                        </div>
-                    </div>
-                    <div class="chapter-node" data-animate="slide-right" data-animate-delay="200">
-                        <span class="chapter-node__label">Chapter 5</span>
-                        <div>
-                            <h3 class="font-semibold text-[var(--navy)]">Scaling Communication Cadence</h3>
-                            <p class="text-sm text-[var(--stone)]">Design communication rituals that keep your product, customers, and capital conversations rooted in shared intent.</p>
-                        </div>
-                    </div>
-                </div>
+                <h2 class="font-display text-3xl md:text-[2.75rem] text-[var(--navy)] leading-tight mt-3">Six Chapters to Move Your Co-Founding Team from Tension to Traction.</h2>
+                <p class="text-[var(--stone)] text-base leading-relaxed max-w-3xl mx-auto mt-4">Each chapter provides battle-tested conversation prompts, decision-making frameworks, and worksheets designed for the realities of Indian and global startups.</p>
             </div>
-
-            <div class="bg-white rounded-3xl shadow-2xl p-8 lg:p-10 border border-[rgba(16,42,67,0.06)] resource-card" data-animate="fade-up" data-animate-delay="180">
-                <div class="resource-card__badge">Actionable Deliverables Inside</div>
-                <h3 class="font-display text-2xl text-[var(--navy)] mb-4">What You'll Walk Away With</h3>
-                <ul class="space-y-4 text-sm text-[var(--stone)]">
-                    <li class="flex items-start gap-3">
-                        <span class="mt-1 inline-flex w-2.5 h-2.5 rounded-full bg-[var(--coral)]"></span>
-                        Plain-language partnership agreements that satisfy due diligence without sacrificing nuance.
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="mt-1 inline-flex w-2.5 h-2.5 rounded-full bg-[var(--teal)]"></span>
-                        Conflict reflection cards designed for cultural nuance and diverse team dynamics.
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="mt-1 inline-flex w-2.5 h-2.5 rounded-full bg-[var(--navy)]"></span>
-                        Quarterly review templates that align product, capital, and hiring, without drowning your team in dashboards.
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="mt-1 inline-flex w-2.5 h-2.5 rounded-full bg-[var(--sea)]"></span>
-                        A 30-day activation plan that prioritizes reflection before action, ensuring your culture scales with your growth.
-                    </li>
-                </ul>
-                <div class="mt-7 p-5 rounded-2xl bg-[rgba(42,179,166,0.1)] text-sm text-[var(--sea)]">
-                    <strong>Exclusive Bonus:</strong> Includes an editable Notion workspace and Google Sheets dashboards for teams that value transparency over theatrics.
+            <div class="grid md:grid-cols-3 gap-8 mt-12" data-animate="stagger-up">
+                <div class="chapter-card">
+                    <span class="chapter-card__label">Chapter 1</span>
+                    <h3 class="font-semibold text-[var(--navy)] mt-4">The Partnership Charter</h3>
+                    <p class="text-sm text-[var(--stone)] mt-2">Forge a rock-solid foundation by articulating your shared ambition, ethics, and decision-making cadence.</p>
+                </div>
+                <div class="chapter-card">
+                    <span class="chapter-card__label">Chapter 2</span>
+                    <h3 class="font-semibold text-[var(--navy)] mt-4">The Trust Ledger</h3>
+                    <p class="text-sm text-[var(--stone)] mt-2">A simple, powerful tool to diagnose and discuss the state of trust in your founding team.</p>
+                </div>
+                <div class="chapter-card">
+                    <span class="chapter-card__label">Chapter 3</span>
+                    <h3 class="font-semibold text-[var(--navy)] mt-4">Money, Equity & Momentum</h3>
+                    <p class="text-sm text-[var(--stone)] mt-2">Navigate compensation, ESOPs, and governance with fairness and long-term stewardship at the forefront.</p>
+                </div>
+                <div class="chapter-card">
+                    <span class="chapter-card__label">Chapter 4</span>
+                    <h3 class="font-semibold text-[var(--navy)] mt-4">The Ownership Compass</h3>
+                    <p class="text-sm text-[var(--stone)] mt-2">Define roles and responsibilities with a framework that values stewardship over ego and hierarchy.</p>
+                </div>
+                <div class="chapter-card">
+                    <span class="chapter-card__label">Chapter 5</span>
+                    <h3 class="font-semibold text-[var(--navy)] mt-4">Scaling Communication Cadence</h3>
+                    <p class="text-sm text-[var(--stone)] mt-2">Design communication rituals that keep your product, customers, and capital conversations rooted in shared intent.</p>
+                </div>
+                <div class="chapter-card">
+                    <span class="chapter-card__label">Chapter 6</span>
+                    <h3 class="font-semibold text-[var(--navy)] mt-4">The Cadence Reset</h3>
+                    <p class="text-sm text-[var(--stone)] mt-2">A practical guide to realigning your team when growth and complexity threaten to pull you apart.</p>
                 </div>
             </div>
         </div>
     </section>
+<!-- 
+    <div class="chapter-marquee-container">
+        <div class="chapter-marquee">
+            <div class="chapter-node">
+                <span class="chapter-node__label">Chapter 1</span>
+                <div>
+                    <h3 class="font-semibold text-[var(--navy)]">The Partnership Charter</h3>
+                    <p class="text-sm text-[var(--stone)]">Forge a rock-solid foundation by articulating your shared ambition, ethics, and decision-making cadence.</p>
+                </div>
+            </div>
+            <div class="chapter-node">
+                <span class="chapter-node__label">Chapter 2</span>
+                <div>
+                    <h3 class="font-semibold text-[var(--navy)]">The Trust Ledger</h3>
+                    <p class="text-sm text-[var(--stone)]">A simple, powerful tool to diagnose and discuss the state of trust in your founding team.</p>
+                </div>
+            </div>
+            <div class="chapter-node">
+                <span class="chapter-node__label">Chapter 3</span>
+                <div>
+                    <h3 class="font-semibold text-[var(--navy)]">Money, Equity & Momentum</h3>
+                    <p class="text-sm text-[var(--stone)]">Navigate compensation, ESOPs, and governance with fairness and long-term stewardship at the forefront.</p>
+                </div>
+            </div>
+            <div class="chapter-node">
+                <span class="chapter-node__label">Chapter 4</span>
+                <div>
+                    <h3 class="font-semibold text-[var(--navy)]">The Ownership Compass</h3>
+                    <p class="text-sm text-[var(--stone)]">Define roles and responsibilities with a framework that values stewardship over ego and hierarchy.</p>
+                </div>
+            </div>
+            <div class="chapter-node">
+                <span class="chapter-node__label">Chapter 5</span>
+                <div>
+                    <h3 class="font-semibold text-[var(--navy)]">Scaling Communication Cadence</h3>
+                    <p class="text-sm text-[var(--stone)]">Design communication rituals that keep your product, customers, and capital conversations rooted in shared intent.</p>
+                </div>
+            </div>
+            <div class="chapter-node">
+                <span class="chapter-node__label">Chapter 6</span>
+                <div>
+                    <h3 class="font-semibold text-[var(--navy)]">The Cadence Reset</h3>
+                    <p class="text-sm text-[var(--stone)]">A practical guide to realigning your team when growth and complexity threaten to pull you apart.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+ -->
 
     <!-- Bonuses -->
     <section id="bonuses" class="py-24 bg-white">
@@ -274,8 +305,11 @@
                     </div>
                     <p class="text-xs uppercase tracking-[0.2em] text-[var(--sea)] mt-6">Next Cohort Opens November</p>
                 </div>
-                 <div class="bonus-image-placeholder">
-                    <img src="assets/ArtofWarV2.png" alt="The Art of War" class="w-full h-auto rounded-lg">
+                 <div class="bonus-image-placeholder md:col-span-3 mt-8 flex flex-col items-center">
+                    <h3 class="font-display text-xl text-[var(--navy)] mt-5 mb-3 text-center">From the Author of the Bestselling "The Art of War V2"</h3>
+                    <div class="max-w-xs mx-auto">
+                        <img src="assets/ArtofWarV2.png" alt="The Art of War" class="w-full h-auto rounded-lg">
+                    </div>
                 </div>
             </div>
         </div>

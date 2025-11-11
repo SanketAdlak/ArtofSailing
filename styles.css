@@ -15,6 +15,7 @@ body {
     background-color: var(--cloud);
     color: var(--ink);
     scroll-behavior: smooth;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 section {
@@ -414,7 +415,7 @@ section > *:not(.section-gradient) {
 
 .chapter-node {
     display: flex;
-    align-items: flex-start;
+    align-items: center; /* Changed from flex-start to center */
     gap: 1rem;
     padding: 1.15rem 1.2rem;
     border-radius: 18px;
@@ -423,11 +424,24 @@ section > *:not(.section-gradient) {
     transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.45s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.chapter-node__label {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 96px;
+.chapter-card {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 18px;
+    padding: 1.5rem;
+    box-shadow: 0 16px 35px rgba(16, 42, 67, 0.08);
+    transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.chapter-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 28px 45px rgba(16, 42, 67, 0.12);
+}
+
+.chapter-card__label {
+    display: inline-block;
     padding: 0.35rem 0.75rem;
     border-radius: 999px;
     background: rgba(16, 42, 67, 0.08);
@@ -441,6 +455,7 @@ section > *:not(.section-gradient) {
 .resource-card {
     position: relative;
     overflow: hidden;
+    min-height: auto; /* Ensure it doesn't create blank space */
 }
 
 .resource-card::after {
