@@ -688,6 +688,17 @@ section > *:not(.section-gradient) {
     color: white;
 }
 
+.campaign-btn.active {
+    background-color: var(--navy);
+    color: white;
+}
+
+#image-display img {
+    max-height: 80vh; /* Set max height to 80% of viewport height */
+    width: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the entire image is visible */
+}
+
 .faq-icon {
     transition: transform 0.3s ease;
 }
