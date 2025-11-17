@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About the Author | Sailing & Scaling as Co-Founders</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav class="nav-shell fixed inset-x-0 top-0 z-50 border-b border-[rgba(16,42,67,0.08)] bg-[rgba(244,237,228,0.9)]">
+        <div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="text-lg md:text-xl font-semibold tracking-wide text-[var(--navy)]">Ravi Warrier Publishing</a>
+                <div class="hidden md:flex items-center space-x-9 text-sm font-medium text-[var(--stone)]">
+                    <a href="index.html" class="hover:text-[var(--navy)] transition">Overview</a>
+                    <a href="book.html" class="hover:text-[var(--navy)] transition">Inside the Book</a>
+                    <a href="bonus.html" class="hover:text-[var(--navy)] transition">Bonuses</a>
+                    <a href="author.html" class="hover:text-[var(--navy)] transition">Author</a>
+                    <a href="faq.html" class="hover:text-[var(--navy)] transition">FAQ</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-3">
+                    <a href="bonus.html" class="text-sm font-semibold text-[var(--sea)] hover:text-[var(--navy)] transition">Read a free chapter</a>
+                    <a href="#checkout" class="inline-flex items-center gap-2 rounded-full bg-[var(--navy)] px-5 py-2 text-sm font-semibold text-white transition hover:translate-y-[-2px] hover:bg-[var(--deep-navy)]">
+                        Pre-order Your Copy
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6 6 6-6-6-6" />
+                        </svg>
+                    </a>
+                </div>
+                <button id="menu-btn" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-[rgba(16,42,67,0.15)] text-[var(--navy)]">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden border-t border-[rgba(16,42,67,0.08)] bg-[var(--cloud)]">
+            <div class="px-6 py-4 space-y-4 text-sm text-[var(--stone)]">
+                <a href="index.html" class="block">Overview</a>
+                <a href="book.html" class="block">Inside the Book</a>
+                <a href="bonus.html" class="block">Bonuses</a>
+                <a href="author.html" class="block">About the Author</a>
+                <a href="faq.html" class="block">FAQ</a>
+                <a href="#checkout" class="inline-flex items-center gap-2 rounded-full bg-[var(--navy)] px-5 py-2 font-semibold text-white">Pre-order Your Copy</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-24">
+        <section class="py-24 bg-white">
+            <div class="max-w-4xl mx-auto px-6 sm:px-8 lg:px-10">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
+                    <div class="md:col-span-1">
+                        <img src="assets/Ravi.png" alt="Ravi Warrier" class="rounded-full shadow-xl mx-auto">
+                    </div>
+                    <div class="md:col-span-2 space-y-6">
+                        <p class="section-label text-[var(--sea)]">About the Author</p>
+                        <h1 class="font-display text-4xl text-[var(--navy)]">Ravi Warrier</h1>
+                        <p class="text-lg text-[var(--stone)]">
+                            Ravi Warrier is a seasoned product leader, entrepreneur, and coach who specializes in helping early-stage companies navigate the complexities of co-founder dynamics and sustainable growth. With over 15 years of experience in the tech industry, Ravi has witnessed firsthand the challenges that ambitious founders face.
+                        </p>
+                        <p class="text-[var(--stone)]">
+                            His work is guided by the belief that great companies are built on a foundation of trust, clear communication, and shared values. Through his writing and coaching, Ravi provides actionable frameworks that empower teams to build resilient partnerships and impactful businesses.
+                        </p>
+                        <p class="text-[var(--stone)]">
+                            When he's not writing or working with startups, Ravi enjoys sailing and mentoring the next generation of entrepreneurs. He lives in Bangalore with his family.
+                        </p>
+                        <a href="https://www.linkedin.com/in/raviwarrier/" class="inline-block font-semibold text-[var(--sea)] hover:text-[var(--navy)] transition">
+                            Connect on LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Marquee for Coursework Disclaimer -->
+    <div class="fixed bottom-0 inset-x-0 bg-yellow-100 text-yellow-800 text-sm text-center py-2 z-50">
+        <marquee class="w-full">
+            <span class="font-semibold">Disclaimer:</span> This website is a project for a "Product Marketing" course and is intended for coursework purposes only. It is not an official representation of the author or book.
+        </marquee>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-[var(--deep-navy)] text-white/70">
+        <div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+            <p class="text-sm">© 2025 Ravi Warrier Publishing. All rights reserved.</p>
+            <div class="flex items-center gap-6 text-sm">
+                <a href="https://www.linkedin.com/in/raviwarrier/" class="hover:text-white transition">LinkedIn</a>
+                <a href="bonus.html" class="hover:text-white transition">Sample Chapter</a>
+                <a href="author.html" class="hover:text-white transition">Author</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

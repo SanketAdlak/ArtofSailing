@@ -25,7 +25,7 @@
                 </a>
                 <div class="hidden md:flex items-center space-x-9 text-sm font-medium text-[var(--stone)]">
                     <a href="#overview" class="hover:text-[var(--navy)] transition">Overview</a>
-                    <!-- <a href="#inside" class="hover:text-[var(--navy)] transition">Inside the Book</a> -->
+                    <a href="#inside" class="hover:text-[var(--navy)] transition">Inside the Book</a>
                     <a href="#bonuses" class="hover:text-[var(--navy)] transition">Bonuses</a>
                     <a href="#author" class="hover:text-[var(--navy)] transition">Author</a>
                     <a href="#faq" class="hover:text-[var(--navy)] transition">FAQ</a>
@@ -49,7 +49,7 @@
         <div id="mobile-menu" class="hidden md:hidden border-t border-[rgba(16,42,67,0.08)] bg-[var(--cloud)]">
             <div class="px-6 py-4 space-y-4 text-sm text-[var(--stone)]">
                 <a href="#overview" class="block">Overview</a>
-                <!-- <a href="#inside" class="block">Inside the Book</a> -->
+                <a href="#inside" class="block">Inside the Book</a>
                 <a href="#bonuses" class="block">Bonuses</a>
                 <a href="#author" class="block">About the Author</a>
                 <a href="#faq" class="block">FAQ</a>
@@ -78,7 +78,7 @@
                             <a id="checkout" href="#" class="inline-flex items-center justify-center rounded-full bg-[var(--coral)] px-8 py-3 text-base font-semibold text-white shadow-[0_20px_45px_rgba(255,122,72,0.35)] transition hover:-translate-y-1 hover:bg-[#f8642b]">
                                 Get Yours Today · ₹549
                             </a>
-                            <a href="#sample" class="inline-flex items-center justify-center rounded-full border border-[rgba(16,42,67,0.15)] px-7 py-3 text-base font-semibold text-[var(--navy)] transition hover:-translate-y-1 hover:border-[var(--navy)]">
+                            <a href="bonus.html" class="inline-flex items-center justify-center rounded-full border border-[rgba(16,42,67,0.15)] px-7 py-3 text-base font-semibold text-[var(--navy)] transition hover:-translate-y-1 hover:border-[var(--navy)]">
                                 Read a Free Chapter
                             </a>
                         </div>
@@ -119,7 +119,7 @@
         </div>
     </header>
 
-    <!--
+    <!-- Value Drivers -->
     <section class="py-24 bg-white">
         <div class="section-gradient" aria-hidden="true"></div>
         <div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10">
@@ -161,9 +161,8 @@
             </div>
         </div>
     </section>
-    -->
 
-    <!--
+    <!-- Inside the Book -->
     <section id="inside" class="py-24 bg-[var(--sand)]">
         <div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10">
             <div class="text-center" data-animate="fade-up">
@@ -205,7 +204,6 @@
             </div>
         </div>
     </section>
-    -->
 <!-- 
     <div class="chapter-marquee-container">
         <div class="chapter-marquee">
@@ -429,7 +427,7 @@
                     <div class="space-y-4" data-animate="fade-up">
                         <p class="section-label">Get a Free Chapter</p>
                         <h2 class="font-display text-3xl text-[var(--navy)]">Preview Chapter 2: The Trust Ledger</h2>
-                        <p class="text-sm text-[var(--stone)]">Download the trust pulse diagnostic and conversation starters to restore alignment in your founding team.</p>
+                        <p class="text-sm text-[var(--stone)]">Download the trust pulse diagnostic, conversation starters, and a seven-day reflection sprint to restore alignment in your founding team.</p>
                     </div>
                     <div class="bg-white rounded-3xl border border-[rgba(16,42,67,0.08)] p-6" data-animate="slide-up" data-animate-delay="140">
                         <form id="sample-form" class="space-y-4">
@@ -472,50 +470,22 @@
         <div class="max-w-4xl mx-auto px-6 sm:px-8 lg:px-10">
             <p class="section-label" data-animate="fade-up">Your Questions, Answered</p>
             <h2 class="font-display text-3xl md:text-[2.5rem] text-[var(--navy)] mt-3 mb-8" data-animate="fade-up" data-animate-delay="120">Everything you need to know before you buy.</h2>
-            <div class="space-y-4" data-animate="stagger-fade">
-                <div class="faq-item border-b border-gray-200 pb-4">
-                    <button class="faq-question w-full flex justify-between items-center text-left">
-                        <h3 class="font-semibold text-[var(--navy)]">Is this book only for venture-backed startups?</h3>
-                        <svg class="faq-icon w-5 h-5 text-[var(--navy)] transition-transform transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </button>
-                    <div class="faq-answer hidden mt-2 text-sm text-[var(--stone)]">
-                        <p>Not at all. The frameworks are tested and proven for bootstrapped, angel-backed, and VC-funded companies alike. If you have at least one co-founder and are planning to hire or fundraise, this book is for you.</p>
-                    </div>
+            <div data-animate="stagger-fade">
+                <div class="faq-card">
+                    <h3 class="font-semibold text-[var(--navy)]">Is this book only for venture-backed startups?</h3>
+                    <p class="text-sm text-[var(--stone)] mt-2">Not at all. The frameworks are tested and proven for bootstrapped, angel-backed, and VC-funded companies alike. If you have at least one co-founder and are planning to hire or fundraise, this book is for you.</p>
                 </div>
-                <div class="faq-item border-b border-gray-200 pb-4">
-                    <button class="faq-question w-full flex justify-between items-center text-left">
-                        <h3 class="font-semibold text-[var(--navy)]">Do we need a facilitator to use the worksheets?</h3>
-                        <svg class="faq-icon w-5 h-5 text-[var(--navy)] transition-transform transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </button>
-                    <div class="faq-answer hidden mt-2 text-sm text-[var(--stone)]">
-                        <p>No. Every toolkit comes with facilitator notes, so you can run the sessions yourself or delegate them to an operations lead.</p>
-                    </div>
+                <div class="faq-card">
+                    <h3 class="font-semibold text-[var(--navy)]">Do we need a facilitator to use the worksheets?</h3>
+                    <p class="text-sm text-[var(--stone)] mt-2">No. Every toolkit comes with facilitator notes, so you can run the sessions yourself or delegate them to an operations lead.</p>
                 </div>
-                <div class="faq-item border-b border-gray-200 pb-4">
-                    <button class="faq-question w-full flex justify-between items-center text-left">
-                        <h3 class="font-semibold text-[var(--navy)]">What if we've already worked with a coach?</h3>
-                        <svg class="faq-icon w-5 h-5 text-[var(--navy)] transition-transform transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </button>
-                    <div class="faq-answer hidden mt-2 text-sm text-[var(--stone)]">
-                        <p>Sailing & Scaling is the perfect tool to maintain momentum after a coaching engagement. Many founders use it to codify their breakthroughs and onboard new leaders into their established culture.</p>
-                    </div>
+                <div class="faq-card">
+                    <h3 class="font-semibold text-[var(--navy)]">What if we've already worked with a coach?</h3>
+                    <p class="text-sm text-[var(--stone)] mt-2">Sailing & Scaling is the perfect tool to maintain momentum after a coaching engagement. Many founders use it to codify their breakthroughs and onboard new leaders into their established culture.</p>
                 </div>
-                <div class="faq-item">
-                    <button class="faq-question w-full flex justify-between items-center text-left">
-                        <h3 class="font-semibold text-[var(--navy)]">Is there a digital version available?</h3>
-                        <svg class="faq-icon w-5 h-5 text-[var(--navy)] transition-transform transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </button>
-                    <div class="faq-answer hidden mt-2 text-sm text-[var(--stone)]">
-                        <p>Yes. You can purchase the eBook for ₹229. All worksheets are delivered as editable files, regardless of the format you choose.</p>
-                    </div>
+                <div class="faq-card border-b-0">
+                    <h3 class="font-semibold text-[var(--navy)]">Is there a digital version available?</h3>
+                    <p class="text-sm text-[var(--stone)] mt-2">Yes. You can purchase the eBook for ₹229. All worksheets are delivered as editable files, regardless of the format you choose.</p>
                 </div>
             </div>
         </div>
@@ -536,7 +506,6 @@
                 <a href="https://www.linkedin.com/in/raviwarrier/" class="hover:text-white transition">LinkedIn</a>
                 <a href="#sample" class="hover:text-white transition">Sample Chapter</a>
                 <a href="#author" class="hover:text-white transition">Author</a>
-                <a href="campaigns.html" class="hover:text-white transition">Campaigns</a>
             </div>
         </div>
     </footer>
@@ -562,6 +531,5 @@
         </svg>
     </a>
 
-    <!-- Scripts -->
-    <script defer src="app.js"></script>
 </body>
+</html>
