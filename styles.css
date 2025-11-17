@@ -668,6 +668,49 @@ section > *:not(.section-gradient) {
     transform: scale(1.1);
 }
 
+.section-label {
+    font-size: 0.875rem; /* text-sm */
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--sea);
+    letter-spacing: 0.25em;
+}
+
+.section-label--light {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.quote-card {
+    background-color: var(--cloud);
+    border: 1px solid rgba(16, 42, 67, 0.08);
+    border-radius: 1.5rem;
+    transition: all 0.3s ease-in-out;
+    flex-shrink: 0;
+    width: 380px; /* Or whatever width you prefer */
+    margin: 0 1rem;
+}
+
+.testimonial-marquee {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.testimonial-track {
+    display: flex;
+    width: calc(380px * 8 + 8rem * 2); /* (card width * number of cards) + margins */
+    animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-380px * 4 - 4rem * 2)); /* -(card width * original number of cards + margins) */
+    }
+}
+
 .campaign-btn {
     padding: 0.5rem 1.5rem;
     border-radius: 999px;
@@ -686,6 +729,17 @@ section > *:not(.section-gradient) {
 .campaign-btn.active {
     background-color: var(--navy);
     color: white;
+}
+
+.campaign-btn.active {
+    background-color: var(--navy);
+    color: white;
+}
+
+#image-display img {
+    max-height: 80vh; /* Set max height to 80% of viewport height */
+    width: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the entire image is visible */
 }
 
 .faq-icon {

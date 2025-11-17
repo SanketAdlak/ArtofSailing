@@ -20,7 +20,9 @@
     <nav class="nav-shell fixed inset-x-0 top-0 z-50 border-b border-[rgba(16,42,67,0.08)] bg-[rgba(244,237,228,0.9)]">
         <div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10">
             <div class="flex items-center justify-between h-20">
-                <a href="#overview" class="text-lg md:text-xl font-semibold tracking-wide text-[var(--navy)]">Ravi Warrier Publishing</a>
+                <a href="#overview" class="text-lg md:text-xl font-semibold tracking-wide text-[var(--navy)]">
+                    <img src="assets/Logo.jpg" alt="Ravi Warrier Logo" class="h-8 w-auto" style="filter: drop-shadow(2px 4px 6px black);">
+                </a>
                 <div class="hidden md:flex items-center space-x-9 text-sm font-medium text-[var(--stone)]">
                     <a href="#overview" class="hover:text-[var(--navy)] transition">Overview</a>
                     <a href="#inside" class="hover:text-[var(--navy)] transition">Inside the Book</a>
@@ -29,8 +31,8 @@
                     <a href="#faq" class="hover:text-[var(--navy)] transition">FAQ</a>
                 </div>
                 <div class="hidden md:flex items-center space-x-3">
-                    <a href="bonus.html" class="text-sm font-semibold text-[var(--sea)] hover:text-[var(--navy)] transition">Read a free chapter</a>
-                    <a href="#checkout" class="inline-flex items-center gap-2 rounded-full bg-[var(--navy)] px-5 py-2 text-sm font-semibold text-white transition hover:translate-y-[-2px] hover:bg-[var(--deep-navy)]">
+                    <a href="#sample" class="text-sm font-semibold text-[var(--sea)] hover:text-[var(--navy)] transition">Read a free chapter</a>
+                    <a href="#overview" class="inline-flex items-center gap-2 rounded-full bg-[var(--navy)] px-5 py-2 text-sm font-semibold text-white transition hover:translate-y-[-2px] hover:bg-[var(--deep-navy)]">
                         Pre-order Your Copy
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6 6 6-6-6-6" />
@@ -64,13 +66,9 @@
         <div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10">
             <div class="grid lg:grid-cols-2 gap-12 xl:gap-16 items-center">
                 <div class="space-y-8 relative" data-animate="fade-up">
-                    <div class="inline-flex items-center gap-2 rounded-full bg-white/60 px-4 py-2 text-xs font-semibold uppercase tracking-[0.32em] text-[var(--sea)] shadow-[0_12px_30px_rgba(16,42,67,0.08)]" data-animate="fade-down">
-                        <span class="inline-flex h-2 w-2 rounded-full bg-[var(--coral)]"></span>
-                        New Launch Edition
-                    </div>
                     <p class="eyebrow" data-animate="fade-down" data-animate-delay="80">A FIELD GUIDE FOR AMBITIOUS FOUNDERS</p>
                     <h1 class="font-display text-4xl md:text-5xl lg:text-[3.4rem] leading-tight text-[var(--navy)]" data-animate="slide-up" data-animate-delay="120">
-                        Your vision. <br>Our Frameworks.
+                        Your Vision. <br>Our Frameworks.
                     </h1>
                     <p class="text-lg md:text-xl text-[var(--stone)] max-w-xl" data-animate="fade-up" data-animate-delay="180">
                         A field guide for co-founders to build resilient, high-growth companies without losing their sanity.
@@ -84,25 +82,15 @@
                                 Read a Free Chapter
                             </a>
                         </div>
-                        <div class="cta-progress" aria-hidden="true">
-                            <span class="cta-progress__bar"></span>
-                            <span class="cta-progress__label">74% of first batch claimed</span>
-                        </div>
                     </div>
-                    <div class="flex flex-wrap gap-5 pt-6 text-sm text-[var(--stone)]" data-animate="stagger-fade">
-                        <div class="hero-promise">
-                            <span class="list-marker">01</span>
-                            <div>
-                                <p class="font-semibold text-[var(--navy)]">For Founders</p>
-                                <p>A must-read for startup teams committed to ethical growth.</p>
-                            </div>
-                        </div>
-                        <div class="hero-promise">
-                            <span class="list-marker bg-[var(--navy)]">02</span>
-                            <div>
-                                <p class="font-semibold text-[var(--navy)]">Actionable Wisdom</p>
-                                <p>Frameworks that balance conviction with effective decision-making.</p>
-                            </div>
+                    <div class="pt-6 text-sm text-[var(--stone)]" data-animate="fade-up" data-animate-delay="300">
+                        <p class="text-xs uppercase tracking-widest text-[var(--sea)]">Trusted by founders & institutions</p>
+                        <div class="flex items-center gap-6 mt-4 text-gray-400">
+                            <p class="font-bold">ISB</p>
+                            <p class="font-bold">T-Hub</p>
+                            <p class="font-bold">CIE</p>
+                            <p class="font-bold">IIITH</p>
+                            <p class="font-bold">TiE</p>
                         </div>
                     </div>
                     <div class="hero-metric-card" data-animate="fade-up" data-animate-delay="300">
@@ -111,7 +99,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M3 3v18h18M7 15l4-4 4 4 5-5" />
                             </svg>
                         </div>
-                        <p><strong>Founders report calmer, more productive conversations</strong> after using the frameworks in Chapter 5.</p>
+                        <p>The trusted advisor to <strong> venture-backed founders.</strong></p>
                     </div>
                 </div>
 
@@ -125,13 +113,6 @@
                             <p class="text-xs uppercase tracking-[0.28em] text-[var(--sea)] mb-2">What's Inside?</p>
                             <p class="text-sm font-semibold text-[var(--navy)]">A shared language for conflict, stewardship check-ins, and story-first investor notes—all without compromising your values.</p>
                         </div>
-                    </div>
-                    <div class="floating-testimonial" data-animate="fade-up" data-animate-delay="360">
-                        <div class="floating-testimonial__avatar" aria-hidden="true"></div>
-                        <blockquote>
-                            “It feels like a mentor reminding us why we started. The prompts helped us realign our product choices with our core philosophy.”
-                        </blockquote>
-                        <cite>— Kavya Srinivasan, Co-founder, LumenGrid</cite>
                     </div>
                 </div>
             </div>
@@ -277,7 +258,7 @@
         <div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10">
             <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-10 mb-12">
                 <div class="max-w-2xl" data-animate="fade-up">
-                    <p class="section-label text-[var(--sea)]">Pre-order Today & Unlock the Founder's Vault</p>
+                    <p class="section-label">Pre-order Today & Unlock the Founder's Vault</p>
                     <h2 class="font-display text-3xl md:text-[2.5rem] text-[var(--navy)] mt-3">Limited-Time Bonuses to Accelerate Your Growth.</h2>
                 </div>
                 <div class="text-sm text-[var(--stone)] max-w-md" data-animate="fade-up" data-animate-delay="120">These bonuses are exclusive to the launch and will not be available again. Secure your copy to gain immediate access.</div>
@@ -306,9 +287,14 @@
                     <p class="text-xs uppercase tracking-[0.2em] text-[var(--sea)] mt-6">Next Cohort Opens November</p>
                 </div>
                  <div class="bonus-image-placeholder md:col-span-3 mt-8 flex flex-col items-center">
-                    <h3 class="font-display text-xl text-[var(--navy)] mt-5 mb-3 text-center">From the Author of the Bestselling "The Art of War V2"</h3>
-                    <div class="max-w-xs mx-auto">
-                        <img src="assets/ArtofWarV2.png" alt="The Art of War" class="w-full h-auto rounded-lg">
+                    <h3 class="font-display text-xl text-[var(--navy)] mt-5 mb-3 text-center">From the Author of the Bestselling</h3>
+                    <div class="flex flex-row gap-8 justify-center items-center">
+                        <div class="max-w-[400px]">
+                            <img src="assets/ArtofWarV2.png" alt="The Art of War V2" class="w-full h-auto rounded-lg">
+                        </div>
+                        <div class="max-w-[400px]">
+                            <img src="assets/DesignBook.jpg" alt="Design a Better Business" class="w-full h-auto rounded-lg">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -316,17 +302,19 @@
     </section>
 
     <!-- Testimonials -->
-    <section class="py-24 bg-[var(--sand)]">
+    <section class="py-24 bg-[var(--sand)] overflow-hidden">
         <div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10">
             <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
                 <div class="max-w-2xl" data-animate="fade-up">
-                    <p class="section-label text-[var(--sea)]">Testimonials</p>
+                    <p class="section-label">Testimonials</p>
                     <h2 class="font-display text-3xl md:text-[2.7rem] text-[var(--navy)] mt-3">Frameworks that work under pressure.</h2>
                 </div>
                 <div class="text-sm text-[var(--stone)] max-w-md" data-animate="fade-up" data-animate-delay="120">Real stories from venture-backed founders across SaaS, consumer, and climate sectors.</div>
             </div>
-
-            <div class="grid lg:grid-cols-3 gap-8" data-animate="stagger-up">
+        </div>
+        <div class="testimonial-marquee" data-animate="fade-up">
+            <div class="testimonial-track">
+                <!-- Original Testimonials -->
                 <figure class="quote-card p-7 h-full flex flex-col justify-between">
                     <div>
                         <p class="text-sm text-[var(--sea)] uppercase tracking-[0.16em]">Series A · SaaS</p>
@@ -348,6 +336,85 @@
                     </div>
                     <figcaption class="mt-6 text-sm text-[var(--stone)]">Haritha Rao · Co-founder, Zephyr Renewables</figcaption>
                 </figure>
+                <figure class="quote-card p-7 h-full flex flex-col justify-between">
+                    <div>
+                        <p class="text-sm text-[var(--sea)] uppercase tracking-[0.16em]">Seed · Infra</p>
+                        <blockquote class="mt-4 text-[var(--navy)] font-medium leading-relaxed">“It feels like a mentor reminding us why we started. The prompts helped us realign our product choices with our core philosophy.”</blockquote>
+                    </div>
+                    <figcaption class="mt-6 text-sm text-[var(--stone)]">Kavya Srinivasan · Co-founder, LumenGrid</figcaption>
+                </figure>
+                <!-- Duplicated Testimonials for seamless loop -->
+                <figure class="quote-card p-7 h-full flex flex-col justify-between">
+                    <div>
+                        <p class="text-sm text-[var(--sea)] uppercase tracking-[0.16em]">Series A · SaaS</p>
+                        <blockquote class="mt-4 text-[var(--navy)] font-medium leading-relaxed">“The Ownership Compass helped us slow down, listen, and document decisions without losing momentum.”</blockquote>
+                    </div>
+                    <figcaption class="mt-6 text-sm text-[var(--stone)]">Ananya Gupta · Co-founder, Floatpay</figcaption>
+                </figure>
+                <figure class="quote-card p-7 h-full flex flex-col justify-between">
+                    <div>
+                        <p class="text-sm text-[var(--sea)] uppercase tracking-[0.16em]">Seed · Consumer</p>
+                        <blockquote class="mt-4 text-[var(--navy)] font-medium leading-relaxed">“The investor readiness checklists feel honest. We carried them into diligence calls and simply explained our thinking.”</blockquote>
+                    </div>
+                    <figcaption class="mt-6 text-sm text-[var(--stone)]">Rishabh Menon · Co-founder, House of Ferment</figcaption>
+                </figure>
+                <figure class="quote-card p-7 h-full flex flex-col justify-between">
+                    <div>
+                        <p class="text-sm text-[var(--sea)] uppercase tracking-[0.16em]">Bootstrapped · Climate</p>
+                        <blockquote class="mt-4 text-[var(--navy)] font-medium leading-relaxed">“The cadence reset toolkit gave us the language to say ‘not yet’ when growth temptations appeared.”</blockquote>
+                    </div>
+                    <figcaption class="mt-6 text-sm text-[var(--stone)]">Haritha Rao · Co-founder, Zephyr Renewables</figcaption>
+                </figure>
+                <figure class="quote-card p-7 h-full flex flex-col justify-between">
+                    <div>
+                        <p class="text-sm text-[var(--sea)] uppercase tracking-[0.16em]">Seed · Infra</p>
+                        <blockquote class="mt-4 text-[var(--navy)] font-medium leading-relaxed">“It feels like a mentor reminding us why we started. The prompts helped us realign our product choices with our core philosophy.”</blockquote>
+                    </div>
+                    <figcaption class="mt-6 text-sm text-[var(--stone)]">Kavya Srinivasan · Co-founder, LumenGrid</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- Author -->
+    <section id="author" class="py-24 bg-[var(--sand)]">
+        <div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10 grid lg:grid-cols-[2fr_3fr] gap-16 items-start">
+            <div class="relative" data-animate="fade-in">
+                <div class="absolute -inset-4 rounded-3xl bg-gradient-to-br from-[rgba(42,179,166,0.2)] to-transparent"></div>
+                <img src="assets/Ravi.png" alt="Portrait of Ravi Warrier" class="relative rounded-3xl w-full object-cover">
+            </div>
+            <div class="space-y-8" data-animate="fade-up" data-animate-delay="120">
+                <div>
+                    <p class="section-label">About the Author</p>
+                    <h2 class="font-display text-3xl md:text-[2.7rem] text-[var(--navy)]">The Founder's Founder.</h2>
+                    <p class="text-sm text-[var(--stone)] leading-relaxed mt-4">Ravi Warrier was building websites in 1995, the year the internet arrived in India. His 30-year journey from a 17-year-old entrepreneur to a pivotal figure in India's startup ecosystem is driven by one mission: to bridge the gap between brilliant founders and the right investors.</p>
+                    <p class="text-sm text-[var(--stone)] leading-relaxed mt-2">As the founder of Funding Pitchcraft and a resident mentor at premier incubators like IIIT Hyderabad, Ravi has been the trusted advisor inside the room for over 1,000 startups. He's not just a pitch coach; he's an architect of startup narratives, helping founders translate complex ideas into compelling stories that secure funding.</p>
+                    <p class="text-sm text-[var(--stone)] leading-relaxed mt-2">But beyond the metrics, Ravi operates as a student of human behavior and communication. He believes the toughest challenges in a startup aren't in the code or the business plan, but in the conversations between co-founders. This book is a distillation of that core philosophy.</p>
+                </div>
+                <div class="grid sm:grid-cols-3 gap-5 text-sm">
+                    <div class="rounded-2xl bg-white border border-[rgba(16,42,67,0.08)] p-5">
+                        <p class="text-xs uppercase tracking-[0.2em] text-[var(--sea)]">Years in Venture</p>
+                        <p class="text-lg font-semibold text-[var(--navy)] mt-2">30</p>
+                    </div>
+                    <div class="rounded-2xl bg-white border border-[rgba(16,42,67,0.08)] p-5">
+                        <p class="text-xs uppercase tracking-[0.2em] text-[var(--sea)]">Startups Coached</p>
+                        <p class="text-lg font-semibold text-[var(--navy)] mt-2">1000+</p>
+                    </div>
+                    <div class="rounded-2xl bg-white border border-[rgba(16,42,67,0.08)] p-5">
+                        <p class="text-xs uppercase tracking-[0.2em] text-[var(--sea)]">Books Authored</p>
+                        <p class="text-lg font-semibold text-[var(--navy)] mt-2">5+</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-[var(--navy)] mb-3">Other Publications:</h3>
+                    <ul class="list-disc list-inside text-sm text-[var(--stone)] space-y-2">
+                        <li>Impress Every Investor</li>
+                        <li>Designing the Perfect Pitch Deck</li>
+                        <li>The Seed Investor Mindset</li>
+                        <li>No-Bullshit Forecasting</li>
+                        <li>Handle Any Investor Objections</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -358,7 +425,7 @@
             <div class="rounded-[32px] border border-[rgba(16,42,67,0.08)] bg-[var(--cloud)] p-10 md:p-14 shadow-xl" data-animate="fade-up">
                 <div class="grid md:grid-cols-2 gap-12 items-center">
                     <div class="space-y-4" data-animate="fade-up">
-                        <p class="section-label text-[var(--sea)]">Get a Free Chapter</p>
+                        <p class="section-label">Get a Free Chapter</p>
                         <h2 class="font-display text-3xl text-[var(--navy)]">Preview Chapter 2: The Trust Ledger</h2>
                         <p class="text-sm text-[var(--stone)]">Download the trust pulse diagnostic, conversation starters, and a seven-day reflection sprint to restore alignment in your founding team.</p>
                     </div>
@@ -381,29 +448,17 @@
         </div>
     </section>
 
-    <!-- Author -->
-    <section id="author" class="py-24 bg-[var(--sand)]">
-        <div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10 grid lg:grid-cols-[2fr_3fr] gap-16 items-center">
-            <div class="relative" data-animate="fade-in">
-                <div class="absolute -inset-4 rounded-3xl bg-gradient-to-br from-[rgba(42,179,166,0.2)] to-transparent"></div>
-                <img src="assets/Ravi.png" alt="Portrait of Ravi Warrier" class="relative rounded-3xl w-full object-cover">
-            </div>
-            <div class="space-y-6" data-animate="fade-up" data-animate-delay="120">
-                <p class="section-label text-[var(--sea)]">Meet Your Guide</p>
-                <h2 class="font-display text-3xl md:text-[2.7rem] text-[var(--navy)]">Ravi Warrier helps founders move from intuition to intentional leadership.</h2>
-                <p class="text-sm text-[var(--stone)] leading-relaxed">Ravi has coached over 180 co-founding teams across India, taught venture design at premier institutes, and advised portfolios at T-Hub, TiE, and leading angel networks. He approaches growth as a dialogue between craft, ethics, and market reality.</p>
-                <div class="grid sm:grid-cols-3 gap-5 text-sm">
-                    <div class="rounded-2xl bg-white border border-[rgba(16,42,67,0.08)] p-5">
-                        <p class="text-xs uppercase tracking-[0.2em] text-[var(--sea)]">Years in Venture</p>
-                        <p class="text-lg font-semibold text-[var(--navy)] mt-2">25+</p>
-                    </div>
-                    <div class="rounded-2xl bg-white border border-[rgba(16,42,67,0.08)] p-5">
-                        <p class="text-xs uppercase tracking-[0.2em] text-[var(--sea)]">Founders Coached</p>
-                        <p class="text-lg font-semibold text-[var(--navy)] mt-2">180+</p>
-                    </div>
-                    <div class="rounded-2xl bg-white border border-[rgba(16,42,67,0.08)] p-5">
-                        <p class="text-xs uppercase tracking-[0.2em] text-[var(--sea)]">Capital Influenced</p>
-                        <p class="text-lg font-semibold text-[var(--navy)] mt-2">₹320 Cr</p>
+    <!-- Closing CTA -->
+    <section class="py-24">
+        <div class="max-w-5xl mx-auto px-6 sm:px-8 lg:px-10">
+            <div class="cta-panel rounded-[32px] px-10 md:px-16 py-14 text-white" data-animate="fade-up">
+                <div class="relative z-10 space-y-6 max-w-3xl">
+                    <p class="section-label section-label--light">A Playbook for Intentional Growth</p>
+                    <h2 class="font-display text-3xl md:text-[2.9rem] leading-tight">Stop Guessing, Start Scaling.</h2>
+                    <p class="text-sm text-white/80 max-w-xl">Pre-order today to get your limited-edition bonuses, a free chapter, and our implementation email series, delivered instantly.</p>
+                    <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-4">
+                        <a href="#" class="inline-flex items-center justify-center rounded-full bg-white px-8 py-3 text-base font-semibold text-[var(--navy)] transition hover:-translate-y-1">Claim Your Hardcover · ₹549</a>
+                        <a href="#sample" class="inline-flex items-center justify-center rounded-full border border-white/40 px-7 py-3 text-base font-semibold text-white transition hover:-translate-y-1">Read a Free Chapter First</a>
                     </div>
                 </div>
             </div>
@@ -413,40 +468,51 @@
     <!-- FAQ -->
     <section id="faq" class="py-24 bg-white">
         <div class="max-w-4xl mx-auto px-6 sm:px-8 lg:px-10">
-            <p class="section-label text-[var(--sea)]" data-animate="fade-up">Your Questions, Answered</p>
+            <p class="section-label" data-animate="fade-up">Your Questions, Answered</p>
             <h2 class="font-display text-3xl md:text-[2.5rem] text-[var(--navy)] mt-3 mb-8" data-animate="fade-up" data-animate-delay="120">Everything you need to know before you buy.</h2>
-            <div data-animate="stagger-fade">
-                <div class="faq-card">
-                    <h3 class="font-semibold text-[var(--navy)]">Is this book only for venture-backed startups?</h3>
-                    <p class="text-sm text-[var(--stone)] mt-2">Not at all. The frameworks are tested and proven for bootstrapped, angel-backed, and VC-funded companies alike. If you have at least one co-founder and are planning to hire or fundraise, this book is for you.</p>
+            <div class="space-y-4" data-animate="stagger-fade">
+                <div class="faq-item border-b border-gray-200 pb-4">
+                    <button class="faq-question w-full flex justify-between items-center text-left">
+                        <h3 class="font-semibold text-[var(--navy)]">Is this book only for venture-backed startups?</h3>
+                        <svg class="faq-icon w-5 h-5 text-[var(--navy)] transition-transform transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden mt-2 text-sm text-[var(--stone)]">
+                        <p>Not at all. The frameworks are tested and proven for bootstrapped, angel-backed, and VC-funded companies alike. If you have at least one co-founder and are planning to hire or fundraise, this book is for you.</p>
+                    </div>
                 </div>
-                <div class="faq-card">
-                    <h3 class="font-semibold text-[var(--navy)]">Do we need a facilitator to use the worksheets?</h3>
-                    <p class="text-sm text-[var(--stone)] mt-2">No. Every toolkit comes with facilitator notes, so you can run the sessions yourself or delegate them to an operations lead.</p>
+                <div class="faq-item border-b border-gray-200 pb-4">
+                    <button class="faq-question w-full flex justify-between items-center text-left">
+                        <h3 class="font-semibold text-[var(--navy)]">Do we need a facilitator to use the worksheets?</h3>
+                        <svg class="faq-icon w-5 h-5 text-[var(--navy)] transition-transform transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden mt-2 text-sm text-[var(--stone)]">
+                        <p>No. Every toolkit comes with facilitator notes, so you can run the sessions yourself or delegate them to an operations lead.</p>
+                    </div>
                 </div>
-                <div class="faq-card">
-                    <h3 class="font-semibold text-[var(--navy)]">What if we've already worked with a coach?</h3>
-                    <p class="text-sm text-[var(--stone)] mt-2">Sailing & Scaling is the perfect tool to maintain momentum after a coaching engagement. Many founders use it to codify their breakthroughs and onboard new leaders into their established culture.</p>
+                <div class="faq-item border-b border-gray-200 pb-4">
+                    <button class="faq-question w-full flex justify-between items-center text-left">
+                        <h3 class="font-semibold text-[var(--navy)]">What if we've already worked with a coach?</h3>
+                        <svg class="faq-icon w-5 h-5 text-[var(--navy)] transition-transform transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden mt-2 text-sm text-[var(--stone)]">
+                        <p>Sailing & Scaling is the perfect tool to maintain momentum after a coaching engagement. Many founders use it to codify their breakthroughs and onboard new leaders into their established culture.</p>
+                    </div>
                 </div>
-                <div class="faq-card border-b-0">
-                    <h3 class="font-semibold text-[var(--navy)]">Is there a digital version available?</h3>
-                    <p class="text-sm text-[var(--stone)] mt-2">Yes. You can purchase the eBook for ₹229. All worksheets are delivered as editable files, regardless of the format you choose.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Closing CTA -->
-    <section class="py-24">
-        <div class="max-w-5xl mx-auto px-6 sm:px-8 lg:px-10">
-            <div class="cta-panel rounded-[32px] px-10 md:px-16 py-14 text-white" data-animate="fade-up">
-                <div class="relative z-10 space-y-6 max-w-3xl">
-                    <p class="section-label text-white/70">A Playbook for Intentional Growth</p>
-                    <h2 class="font-display text-3xl md:text-[2.9rem] leading-tight">Stop Guessing, Start Scaling.</h2>
-                    <p class="text-sm text-white/80 max-w-xl">Pre-order today to get your limited-edition bonuses, a free chapter, and our implementation email series, delivered instantly.</p>
-                    <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-4">
-                        <a href="#" class="inline-flex items-center justify-center rounded-full bg-white px-8 py-3 text-base font-semibold text-[var(--navy)] transition hover:-translate-y-1">Claim Your Hardcover · ₹549</a>
-                        <a href="bonus.html" class="inline-flex items-center justify-center rounded-full border border-white/40 px-7 py-3 text-base font-semibold text-white transition hover:-translate-y-1">Read a Free Chapter First</a>
+                <div class="faq-item">
+                    <button class="faq-question w-full flex justify-between items-center text-left">
+                        <h3 class="font-semibold text-[var(--navy)]">Is there a digital version available?</h3>
+                        <svg class="faq-icon w-5 h-5 text-[var(--navy)] transition-transform transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden mt-2 text-sm text-[var(--stone)]">
+                        <p>Yes. You can purchase the eBook for ₹229. All worksheets are delivered as editable files, regardless of the format you choose.</p>
                     </div>
                 </div>
             </div>
