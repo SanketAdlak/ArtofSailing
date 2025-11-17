@@ -668,6 +668,18 @@ section > *:not(.section-gradient) {
     transform: scale(1.1);
 }
 
+.section-label {
+    font-size: 0.875rem; /* text-sm */
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--sea);
+    letter-spacing: 0.25em;
+}
+
+.section-label--light {
+    color: rgba(255, 255, 255, 0.7);
+}
+
 .quote-card {
     background-color: var(--cloud);
     border: 1px solid rgba(16, 42, 67, 0.08);
