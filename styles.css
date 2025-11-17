@@ -647,6 +647,51 @@ section > *:not(.section-gradient) {
     }
 }
 
+.whatsapp-float {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: #25D366;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+    z-index: 100;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+.campaign-btn {
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px;
+    background-color: white;
+    color: var(--navy);
+    font-weight: 600;
+    border: 1px solid var(--navy);
+    transition: all 0.3s ease;
+}
+
+.campaign-btn:hover {
+    background-color: var(--navy);
+    color: white;
+}
+
+.campaign-btn.active {
+    background-color: var(--navy);
+    color: white;
+}
+
+.faq-icon {
+    transition: transform 0.3s ease;
+}
+
 @media (max-width: 768px) {
     .hero-shell::before {
         inset: 2rem auto auto -8rem;
