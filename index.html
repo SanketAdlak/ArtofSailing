@@ -23,7 +23,7 @@
                 <a href="#overview" class="text-lg md:text-xl font-semibold tracking-wide text-[var(--navy)]">Ravi Warrier Publishing</a>
                 <div class="hidden md:flex items-center space-x-9 text-sm font-medium text-[var(--stone)]">
                     <a href="#overview" class="hover:text-[var(--navy)] transition">Overview</a>
-                    <a href="#inside" class="hover:text-[var(--navy)] transition">Inside the Book</a>
+                    <!-- <a href="#inside" class="hover:text-[var(--navy)] transition">Inside the Book</a> -->
                     <a href="#bonuses" class="hover:text-[var(--navy)] transition">Bonuses</a>
                     <a href="#author" class="hover:text-[var(--navy)] transition">Author</a>
                     <a href="#faq" class="hover:text-[var(--navy)] transition">FAQ</a>
@@ -47,7 +47,7 @@
         <div id="mobile-menu" class="hidden md:hidden border-t border-[rgba(16,42,67,0.08)] bg-[var(--cloud)]">
             <div class="px-6 py-4 space-y-4 text-sm text-[var(--stone)]">
                 <a href="#overview" class="block">Overview</a>
-                <a href="#inside" class="block">Inside the Book</a>
+                <!-- <a href="#inside" class="block">Inside the Book</a> -->
                 <a href="#bonuses" class="block">Bonuses</a>
                 <a href="#author" class="block">About the Author</a>
                 <a href="#faq" class="block">FAQ</a>
@@ -138,7 +138,7 @@
         </div>
     </header>
 
-    <!-- Value Drivers -->
+    <!--
     <section class="py-24 bg-white">
         <div class="section-gradient" aria-hidden="true"></div>
         <div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10">
@@ -180,8 +180,9 @@
             </div>
         </div>
     </section>
+    -->
 
-    <!-- Inside the Book -->
+    <!--
     <section id="inside" class="py-24 bg-[var(--sand)]">
         <div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10">
             <div class="text-center" data-animate="fade-up">
@@ -223,6 +224,7 @@
             </div>
         </div>
     </section>
+    -->
 <!-- 
     <div class="chapter-marquee-container">
         <div class="chapter-marquee">
@@ -306,9 +308,14 @@
                     <p class="text-xs uppercase tracking-[0.2em] text-[var(--sea)] mt-6">Next Cohort Opens November</p>
                 </div>
                  <div class="bonus-image-placeholder md:col-span-3 mt-8 flex flex-col items-center">
-                    <h3 class="font-display text-xl text-[var(--navy)] mt-5 mb-3 text-center">From the Author of the Bestselling "The Art of War V2"</h3>
-                    <div class="max-w-xs mx-auto">
-                        <img src="assets/ArtofWarV2.png" alt="The Art of War" class="w-full h-auto rounded-lg">
+                    <h3 class="font-display text-xl text-[var(--navy)] mt-5 mb-3 text-center">From the Author of the Bestselling</h3>
+                    <div class="flex flex-row gap-8 justify-center items-center">
+                        <div class="max-w-[150px]">
+                            <img src="assets/ArtofWarV2.png" alt="The Art of War V2" class="w-full h-auto rounded-lg">
+                        </div>
+                        <div class="max-w-[150px]">
+                            <img src="assets/DesignBook.jpg" alt="Design a Better Business" class="w-full h-auto rounded-lg">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -485,6 +492,13 @@
             <button id="alert-close" class="mt-6 w-full rounded-full bg-[var(--navy)] py-3 text-sm font-semibold text-white">Back to the site</button>
         </div>
     </div>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20your%20book%20and%20mentorship." target="_blank" class="whatsapp-float">
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99 0-3.903-.52-5.586-1.456l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 4.315 1.731 6.086l.474.854-1.021 3.719 3.78-1.001.826.471z"/>
+        </svg>
+    </a>
 
     <!-- Scripts -->
     <script defer src="app.js"></script>
