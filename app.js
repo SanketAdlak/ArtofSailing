@@ -77,6 +77,20 @@ document.addEventListener('DOMContentLoaded', () => {
         window.addEventListener('scroll', onScroll, { passive: true });
     }
 
+    const faqItems = document.querySelectorAll('.faq-item');
+    if (faqItems) {
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            const answer = item.querySelector('.faq-answer');
+            const icon = item.querySelector('.faq-icon');
+
+            question.addEventListener('click', () => {
+                answer.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+    }
+
     if (!prefersReducedMotion) {
         const animatedNodes = document.querySelectorAll('[data-animate]');
         const observerOptions = {
