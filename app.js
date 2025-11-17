@@ -77,6 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
         window.addEventListener('scroll', onScroll, { passive: true });
     }
 
+    // FAQ Accordion
     const faqItems = document.querySelectorAll('.faq-item');
     if (faqItems) {
         faqItems.forEach(item => {
