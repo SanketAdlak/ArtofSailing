@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.add('js-enabled');
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     const menuBtn = document.getElementById('menu-btn');
