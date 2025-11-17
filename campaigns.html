@@ -19,8 +19,13 @@
             <button class="campaign-btn" data-campaign="seasonal">Seasonal</button>
         </div>
 
-        <div id="image-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-            <!-- Images will be loaded here by JavaScript -->
+        <div class="flex justify-center gap-4 mb-8">
+            <label for="image-selector" class="text-lg font-medium text-[var(--navy)]">Select an Image:</label>
+            <select id="image-selector" class="p-2 border rounded-md"></select>
+        </div>
+
+        <div id="image-display" class="flex flex-col items-center gap-4">
+            <!-- Image will be displayed here -->
         </div>
     </div>
 
