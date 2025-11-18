@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const campaignSelector = document.getElementById('campaign-selector');
-    const imageSelector = document.getElementById('image-selector');
+    const imageSelectorButtons = document.getElementById('image-selector-buttons'); // Changed ID
     const imageDisplay = document.getElementById('image-display');
     let currentCampaign = 'common'; // Keep track of the current campaign
 
@@ -39,47 +39,57 @@ document.addEventListener('DOMContentLoaded', () => {
         img.alt = imageName;
         img.classList.add('max-w-full', 'h-auto', 'rounded-lg', 'shadow-md');
 
+        // Optional: Add a caption for the image
         const p = document.createElement('p');
-        p.textContent = imageName;
+        p.textContent = imageName.replace(/\.png$/, '').replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()); // Format name
         p.classList.add('text-sm', 'text-gray-600', 'mt-2');
 
         imageDisplay.appendChild(img);
         imageDisplay.appendChild(p);
     };
 
-    const updateImageSelector = (campaignType) => {
-        imageSelector.innerHTML = ''; // Clear existing options
+    const updateImageButtons = (campaignType) => { // Renamed function
+        imageSelectorButtons.innerHTML = ''; // Clear existing buttons
         currentCampaign = campaignType;
 
         const images = campaigns[campaignType];
         if (images) {
             images.forEach(imageName => {
-                const option = document.createElement('option');
-                option.value = imageName;
-                option.textContent = imageName;
-                imageSelector.appendChild(option);
+                const button = document.createElement('button');
+                button.classList.add('campaign-btn', 'image-select-btn'); // Add a new class for image buttons
+                button.textContent = imageName.replace(/\.png$/, '').replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()); // Format name for button text
+                button.dataset.image = imageName; // Store image name in data attribute
+
+                button.addEventListener('click', () => {
+                    displayImage(imageName);
+                    // Update active state for image buttons
+                    document.querySelectorAll('.image-select-btn').forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+                });
+                imageSelectorButtons.appendChild(button);
             });
-            // Display the first image by default
-            displayImage(images[0]);
+            // Display the first image by default and set its button as active
+            if (images.length > 0) {
+                displayImage(images[0]);
+                imageSelectorButtons.querySelector(`[data-image="${images[0]}"]`).classList.add('active');
+            }
         }
     };
 
     campaignSelector.addEventListener('click', (event) => {
         if (event.target.classList.contains('campaign-btn')) {
             const campaignType = event.target.dataset.campaign;
-            updateImageSelector(campaignType);
+            updateImageButtons(campaignType); // Call renamed function
 
-            // Optional: Add active state to the button
+            // Update active state for campaign type buttons
             document.querySelectorAll('.campaign-btn').forEach(btn => btn.classList.remove('active'));
             event.target.classList.add('active');
         }
     });
 
-    imageSelector.addEventListener('change', (event) => {
-        displayImage(event.target.value);
-    });
+    // Removed: imageSelector.addEventListener('change', ...)
 
     // Initially render the 'common' campaign
-    updateImageSelector('common');
+    updateImageButtons('common'); // Call renamed function
     campaignSelector.querySelector('[data-campaign="common"]').classList.add('active');
 });
